@@ -10,11 +10,13 @@ _house_prices = HousePricesDto.house_prices
 
 @api.route('/')
 class PredictPrice(Resource):
-    @api.response(200, 'Price predicted successfully.')
+    @api.expect(_house_prices, validate=True)
+    @api.response(201, 'Price predicted successfully.')
     @api.doc('predict a house prices')
-    def get(self):
+    def post(self):
         """Predict a House Prices """
-        return predict_price()
+        data = request.json
+        return predict_price(data=data)
 
 
 
