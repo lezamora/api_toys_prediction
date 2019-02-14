@@ -13,7 +13,7 @@ class Config:
 
 class DevelopmentConfig(Config):
     # Flask settings
-    SERVER_NAME = 'localhost:8888'
+    SERVER_NAME = 'localhost:7070'
     DEBUG = True  # Do not use debug mode in production
 
     # Flask-Restplus settings

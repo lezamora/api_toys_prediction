@@ -2,7 +2,6 @@ import os
 import sys
 sys.path.append('./app/')
 
-
 from flask_script import Manager
 
 from app import blueprint
@@ -21,6 +20,6 @@ def run():
     app.run()
 
 
-
 if __name__ == '__main__':
     manager.run()
+
