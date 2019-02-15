@@ -1,14 +1,14 @@
-from app.main.util import load_model
+from ..util.load_model import load_house_prices_model
 
-ml_model = load_model.load_house_prices_model('../model/xbregresor2019_01_17__17_52.joblib')
+ml_model = load_house_prices_model('C:\\Repositorios\\api_toys_prediction\\app\\main\\model\\xbregresor2019_02_14__15_56.joblib')
+
 
 def predict_price(data):
     try:
-        price = ml_model.predict(list(data.values))
         response_object = {
             'status': 'success',
             'message': 'Successfully predicted.',
-            'predicted price': price
+            'predicted price': float(ml_model.predict(list(data.values()))[0])
         }
         return response_object, 201
 
