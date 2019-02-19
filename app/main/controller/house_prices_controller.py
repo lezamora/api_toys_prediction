@@ -1,5 +1,5 @@
 from flask import request
-from flask_restplus import Resource, fields
+from flask_restplus import Resource
 
 from ..dto.house_prices_dto import HousePricesDto
 from ..service.house_prices_service import predict_price

@@ -12,6 +12,7 @@ class Config:
     COLUMNS_ORDER = ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'waterfront', 'view', 'condition',
                      'grade', 'sqft_above', 'sqft_basement', 'yr_built', 'zipcode', 'lat', 'long', 'sqft_living15',
                      'sqft_lot15', 'house_age', 'renovated']
+    LOG_CONFIG_PATH = 'C:\\Repositorios\\api_toys_prediction\\logging.ini'
 
 
 class DevelopmentConfig(Config):
@@ -32,3 +33,4 @@ config_by_name = dict(
 
 model_path = Config.MODEL_PATH
 columns = Config.COLUMNS_ORDER
+log_path = Config.LOG_CONFIG_PATH
