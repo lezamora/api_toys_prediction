@@ -6,7 +6,7 @@ from app.test.base import BaseTestCase
 
 def predict_price(self):
     return self.client.post(
-        '/house_prices/',
+        '/house_prices',
         data=json.dumps(dict(
             sqft_living=1180,
             grade=7,

@@ -1,39 +1,24 @@
-#### FLASK RESTFUL API BOILER-PLATE WITH JWT
+# API TOYS PREDICTIONS
 
-### Terminal commands
+    Api diseñada para poder exponer modelos de data science de prueba. 
+    El objetivo es poder exponer los diferentes modelos entrenados. 
+## Terminal commands
 
-    Initial installation: make install
+    Instalación inicial: make install
 
-    To run test: make tests
+    Ejecutar test con: make tests
 
-    To run application: make run
-
-    To run all commands at once : make all
-
-
-### Viewing the app ###
-
-    Open the following url on your browser to view swagger documentation
-    http://127.0.0.1:5000/
+    Levantar aplicación con: make run
 
 
-### Using Postman ####
 
-    Authorization header is in the following format:
+## Viewing the app ###
 
-    Key: Authorization
-    Value: "token_generated_during_login"
-
-    For testing authorization, url for getting all user requires an admin token while url for getting a single
-    user by public_id requires just a regular authentication.
-
-### Full description and guide ###
-https://medium.freecodecamp.org/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563
+    Para ver la documentación de la api, abrir la siguiente URL:
+    http://localhost:7070/
 
 
-### Contributing
-If you want to contribute to this flask restplus boilerplate, clone the repository and just start making pull requests.
+## Authors
+    El codigo fue adaptado desde:
+    https://github.com/cosmic-byte/flask-restplus-boilerplate.git
 
-```
-https://github.com/cosmic-byte/flask-restplus-boilerplate.git
-```

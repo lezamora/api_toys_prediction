@@ -6,9 +6,10 @@ from .main.controller.house_prices_controller import api as house_prices_ns
 blueprint = Blueprint('api', __name__)
 
 api = Api(blueprint,
-          title='FLASK RESTPLUS API BOILER-PLATE WITH JWT',
+          title='API TOYS PREDICTION',
           version='1.0',
-          description='a boilerplate for flask restplus web service'
+          description='A flask api for predictions'
           )
+
 
 api.add_namespace(house_prices_ns)

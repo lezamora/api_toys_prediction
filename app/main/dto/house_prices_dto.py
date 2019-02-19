@@ -2,7 +2,7 @@ from flask_restplus import Namespace, fields
 
 
 class HousePricesDto:
-    api = Namespace('house_prices', description='data set about house prices')
+    api = Namespace('house_prices', description='Dataset about house prices')
     house_prices = api.model('house_prices', {
         'sqft_living': fields.Integer(required=True, description='Measurement of house in square foot'),
         'grade': fields.Integer(required=True, description='Overall grade given to the housing unit(1-11)'),

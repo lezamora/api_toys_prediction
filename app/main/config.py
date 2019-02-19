@@ -8,6 +8,10 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
     DEBUG = False
+    MODEL_PATH = 'C:\\Repositorios\\api_toys_prediction\\app\\main\\model\\xbregresor2019_02_18__14_41.joblib'
+    COLUMNS_ORDER = ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'waterfront', 'view', 'condition',
+                     'grade', 'sqft_above', 'sqft_basement', 'yr_built', 'zipcode', 'lat', 'long', 'sqft_living15',
+                     'sqft_lot15', 'house_age', 'renovated']
 
 
 class DevelopmentConfig(Config):
@@ -25,3 +29,6 @@ class DevelopmentConfig(Config):
 config_by_name = dict(
     dev=DevelopmentConfig
 )
+
+model_path = Config.MODEL_PATH
+columns = Config.COLUMNS_ORDER
