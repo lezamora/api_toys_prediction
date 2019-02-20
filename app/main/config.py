@@ -1,11 +1,3 @@
-import os
-
-# uncomment the line below for postgres database url from environment variable
-# postgres_local_base = os.environ['DATABASE_URL']
-
-basedir = os.path.abspath(os.path.dirname(__file__))
-
-
 class Config:
     DEBUG = False
     MODEL_PATH = 'C:\\Repositorios\\api_toys_prediction\\app\\main\\model\\xbregresor2019_02_18__14_41.joblib'
@@ -27,8 +19,22 @@ class DevelopmentConfig(Config):
     RESTPLUS_ERROR_404_HELP = False
 
 
+class TestingConfig(Config):
+    # Flask settings
+    SERVER_NAME = 'localhost:8080'
+    DEBUG = True  # Do not use debug mode in production
+    TESTING = True
+
+    # Flask-Restplus settingss
+    RESTPLUS_SWAGGER_UI_DOC_EXPANSION = 'list'
+    RESTPLUS_VALIDATE = True
+    RESTPLUS_MASK_SWAGGER = False
+    RESTPLUS_ERROR_404_HELP = False
+
+
 config_by_name = dict(
-    dev=DevelopmentConfig
+    dev=DevelopmentConfig,
+    test=TestingConfig
 )
 
 model_path = Config.MODEL_PATH

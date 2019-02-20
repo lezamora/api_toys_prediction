@@ -11,5 +11,4 @@ api = Api(blueprint,
           description='A flask api for predictions'
           )
 
-
 api.add_namespace(house_prices_ns)
