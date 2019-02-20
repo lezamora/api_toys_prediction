@@ -29,7 +29,7 @@ tests: requirements
 
 ## Run application
 run: tests
-	$(PYTHON_INTERPRETER) python manage.py run
+	$(PYTHON_INTERPRETER) manage.py run
 
 ## Delete all compiled Python files
 clean:
