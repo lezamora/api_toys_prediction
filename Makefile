@@ -28,7 +28,7 @@ tests: requirements
 	$(PYTHON_INTERPRETER) manage.py test
 
 ## Run application
-run: tests
+run:
 	$(PYTHON_INTERPRETER) manage.py run
 
 ## Delete all compiled Python files

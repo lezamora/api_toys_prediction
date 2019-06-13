@@ -1,15 +1,15 @@
 class Config:
     DEBUG = False
-    MODEL_PATH = 'C:\\Repositorios\\api_toys_prediction\\app\\main\\model\\xbregresor2019_02_18__14_41.joblib'
+    MODEL_PATH = 'app/main/model/xbregresor2019_02_18__14_41.joblib'
     COLUMNS_ORDER = ['bedrooms', 'bathrooms', 'sqft_living', 'sqft_lot', 'floors', 'waterfront', 'view', 'condition',
                      'grade', 'sqft_above', 'sqft_basement', 'yr_built', 'zipcode', 'lat', 'long', 'sqft_living15',
                      'sqft_lot15', 'house_age', 'renovated']
-    LOG_CONFIG_PATH = 'C:\\Repositorios\\api_toys_prediction\\logging.ini'
+    LOG_CONFIG_PATH = 'logging.ini'
 
 
 class DevelopmentConfig(Config):
     # Flask settings
-    SERVER_NAME = 'localhost:7070'
+    SERVER_NAME = 'localhost:5050'
     DEBUG = True  # Do not use debug mode in production
 
     # Flask-Restplus settings
@@ -21,7 +21,7 @@ class DevelopmentConfig(Config):
 
 class TestingConfig(Config):
     # Flask settings
-    SERVER_NAME = 'localhost:8080'
+    SERVER_NAME = 'localhost:5050'
     DEBUG = True  # Do not use debug mode in production
     TESTING = True
 

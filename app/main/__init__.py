@@ -1,7 +1,12 @@
+import os
 from flask import Flask
 from flask_bcrypt import Bcrypt
 
 from .config import config_by_name
+
+if not os.path.exists('logs'):
+    os.makedirs('logs')
+
 
 flask_bcrypt = Bcrypt()
 
