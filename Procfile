@@ -1,1 +1,1 @@
-worker: python3 manage.py run
+worker: gunicorn python3 manage.py run
