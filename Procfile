@@ -1,1 +1,1 @@
-worker: python manage.py run
+web:gunicorn python manage.py run
