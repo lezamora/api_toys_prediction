@@ -1,1 +1,1 @@
-web: gunicorn manage.py run --log-file -
+web: python manage.py run --log-file -
