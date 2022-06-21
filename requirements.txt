@@ -17,7 +17,7 @@ joblib==0.13.2
 jsonschema==2.6.0
 Mako==1.0.7
 MarkupSafe==1.1.0
-numpy==1.16.1
+numpy==1.22.0
 pandas==0.24.1
 pycparser==2.19
 python-dateutil==2.7.5
